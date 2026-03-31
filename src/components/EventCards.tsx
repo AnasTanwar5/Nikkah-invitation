@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Calendar, BookOpen, UtensilsCrossed } from "lucide-react";
+import { Calendar, BookOpen, UtensilsCrossed, MapPin } from "lucide-react";
 
 const EventCard = ({ icon: Icon, title, lines, delay, href }: {
   icon: typeof Calendar;
@@ -10,16 +10,17 @@ const EventCard = ({ icon: Icon, title, lines, delay, href }: {
 }) => {
   const content = (
     <motion.div
-      className="relative flex flex-col items-center p-6 rounded-2xl border border-gold/20 backdrop-blur-sm cursor-pointer"
+      className="relative flex flex-col items-center p-6 rounded-2xl border border-gold/20 backdrop-blur-sm cursor-pointer group overflow-hidden"
       style={{
         background: "linear-gradient(145deg, rgba(255,248,246,0.8) 0%, rgba(246,211,218,0.4) 50%, rgba(212,175,55,0.05) 100%)",
         boxShadow: "0 4px 24px rgba(201,124,138,0.1), inset 0 1px 0 rgba(212,175,55,0.15)",
       }}
       initial={{ opacity: 0, y: 20 }}
+      whileHover={{ y: -5, boxShadow: "0 8px 30px rgba(212,175,55,0.15)" }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay, duration: 0.8 }}
     >
-      <div className="w-12 h-12 rounded-full flex items-center justify-center mb-3"
+      <div className="w-12 h-12 rounded-full flex items-center justify-center mb-3 transition-transform duration-300 group-hover:scale-110"
         style={{
           background: "linear-gradient(135deg, #D4AF37 0%, #F3D27A 50%, #B8962E 100%)",
           boxShadow: "0 0 14px rgba(212,175,55,0.35)",
@@ -33,6 +34,14 @@ const EventCard = ({ icon: Icon, title, lines, delay, href }: {
           {line}
         </p>
       ))}
+
+      {/* Subtle Hint for Always-on Display at bottom */}
+      {href && (
+        <div className="mt-4 flex items-center gap-1 text-[10px] font-body italic text-deep-accent/60 group-hover:text-deep-accent transition-colors duration-300">
+          <MapPin size={10} />
+          <span>Tap to get easy access to location</span>
+        </div>
+      )}
     </motion.div>
   );
 
