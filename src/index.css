@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Amiri:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 14 100% 98%;
+    --foreground: 0 12% 25%;
+
+    --card: 14 60% 96%;
+    --card-foreground: 0 12% 25%;
+
+    --popover: 14 60% 96%;
+    --popover-foreground: 0 12% 25%;
+
+    --primary: 348 55% 72%;
+    --primary-foreground: 14 100% 98%;
+
+    --secondary: 348 45% 80%;
+    --secondary-foreground: 0 12% 25%;
+
+    --muted: 348 40% 78%;
+    --muted-foreground: 0 12% 32%;
+
+    --accent: 345 35% 55%;
+    --accent-foreground: 14 100% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 348 45% 75%;
+    --input: 348 50% 85%;
+    --ring: 345 32% 63%;
+
+    --radius: 0.75rem;
+
+    /* Custom wedding tokens */
+    --deep-accent: 345 35% 40%;
+    --gold: 43 73% 52%;
+    --gold-soft: 46 80% 71%;
+    --gold-glow: 43 73% 52%;
+
+    --gradient-bg: linear-gradient(135deg, #E8B0BC 0%, #D4899A 25%, #C97C8A 50%, #B5667A 70%, #D88C9A 85%, #C06C84 100%);
+    --gradient-bismillah: radial-gradient(circle at center, #FFF0EE 0%, #E8A8B4 35%, #D4899A 65%, #B5677A 100%);
+    --gradient-gold: linear-gradient(90deg, #D4AF37, #F3D27A, #B8962E);
+    --shadow-gold: 0 0 10px rgba(212, 175, 55, 0.3);
+    --shadow-gold-lg: 0 0 30px rgba(212, 175, 55, 0.25);
+
+    --font-display: 'Cormorant Garamond', serif;
+    --font-body: 'Lora', serif;
+    --font-arabic: 'Amiri', serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer components {
+  .gold-text {
+    background: linear-gradient(90deg, #B8962E, #D4AF37, #F3D27A, #D4AF37, #B8962E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: none;
+    filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.2));
+  }
+
+  .gold-glow {
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+    color: #D4AF37;
+  }
+
+  .bg-wedding-gradient {
+    background: var(--gradient-bg);
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-arabic {
+    font-family: var(--font-arabic);
+  }
+
+  .curtain-fabric {
+    background: linear-gradient(
+      180deg,
+      hsl(346, 40%, 70%) 0%,
+      hsl(340, 36%, 58%) 30%,
+      hsl(346, 40%, 65%) 50%,
+      hsl(340, 36%, 55%) 70%,
+      hsl(346, 40%, 60%) 100%
+    );
+  }
+
+  .curtain-fold {
+    background: repeating-linear-gradient(
+      90deg,
+      transparent 0px,
+      rgba(255, 255, 255, 0.06) 8px,
+      transparent 16px,
+      rgba(0, 0, 0, 0.04) 24px,
+      transparent 32px
+    );
+  }
+
+  .name-glow {
+    text-shadow: 0 0 12px rgba(212, 175, 55, 0.1);
+  }
+}
+
+@layer utilities {
+  .floral-pattern {
+    background-image: 
+      radial-gradient(ellipse at 20% 50%, rgba(239, 183, 193, 0.12) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 50%, rgba(239, 183, 193, 0.12) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 20%, rgba(212, 175, 55, 0.05) 0%, transparent 40%),
+      radial-gradient(ellipse at 50% 80%, rgba(212, 175, 55, 0.05) 0%, transparent 40%);
+  }
+
+  .center-glow {
+    background: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.1) 0%, rgba(246, 211, 218, 0.08) 40%, transparent 65%);
+  }
+
+  .edge-vignette {
+    box-shadow: inset 0 0 120px 40px rgba(201, 124, 138, 0.08);
+  }
+}
