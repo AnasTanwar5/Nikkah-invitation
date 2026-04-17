@@ -6,44 +6,44 @@
 
 @layer base {
   :root {
-    --background: 14 100% 98%;
+    --background: 270 100% 98%;
     --foreground: 0 12% 25%;
 
-    --card: 14 60% 96%;
+    --card: 270 60% 96%;
     --card-foreground: 0 12% 25%;
 
-    --popover: 14 60% 96%;
+    --popover: 270 60% 96%;
     --popover-foreground: 0 12% 25%;
 
-    --primary: 348 55% 72%;
-    --primary-foreground: 14 100% 98%;
+    --primary: 270 55% 72%;
+    --primary-foreground: 270 100% 98%;
 
-    --secondary: 348 45% 80%;
+    --secondary: 270 45% 80%;
     --secondary-foreground: 0 12% 25%;
 
-    --muted: 348 40% 78%;
+    --muted: 270 40% 78%;
     --muted-foreground: 0 12% 32%;
 
-    --accent: 345 35% 55%;
-    --accent-foreground: 14 100% 98%;
+    --accent: 270 35% 55%;
+    --accent-foreground: 270 100% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 348 45% 75%;
-    --input: 348 50% 85%;
-    --ring: 345 32% 63%;
+    --border: 270 45% 75%;
+    --input: 270 50% 85%;
+    --ring: 270 32% 63%;
 
     --radius: 0.75rem;
 
     /* Custom wedding tokens */
-    --deep-accent: 345 35% 40%;
+    --deep-accent: 270 35% 40%;
     --gold: 43 73% 52%;
     --gold-soft: 46 80% 71%;
     --gold-glow: 43 73% 52%;
 
-    --gradient-bg: linear-gradient(135deg, #E8B0BC 0%, #D4899A 25%, #C97C8A 50%, #B5667A 70%, #D88C9A 85%, #C06C84 100%);
-    --gradient-bismillah: radial-gradient(circle at center, #FFF0EE 0%, #E8A8B4 35%, #D4899A 65%, #B5677A 100%);
+    --gradient-bg: linear-gradient(135deg, #E6D0EE 0%, #D8B4E2 25%, #C084D0 50%, #A66BB5 70%, #CA9CD4 85%, #B371C2 100%);
+    --gradient-bismillah: radial-gradient(circle at center, #F8F0FA 0%, #E6D0EE 35%, #C084D0 65%, #A66BB5 100%);
     --gradient-gold: linear-gradient(90deg, #D4AF37, #F3D27A, #B8962E);
     --shadow-gold: 0 0 10px rgba(212, 175, 55, 0.3);
     --shadow-gold-lg: 0 0 30px rgba(212, 175, 55, 0.25);
@@ -108,11 +108,11 @@
   .curtain-fabric {
     background: linear-gradient(
       180deg,
-      hsl(346, 40%, 70%) 0%,
-      hsl(340, 36%, 58%) 30%,
-      hsl(346, 40%, 65%) 50%,
-      hsl(340, 36%, 55%) 70%,
-      hsl(346, 40%, 60%) 100%
+      hsl(270, 40%, 70%) 0%,
+      hsl(270, 36%, 58%) 30%,
+      hsl(270, 40%, 65%) 50%,
+      hsl(270, 36%, 55%) 70%,
+      hsl(270, 40%, 60%) 100%
     );
   }
 
@@ -135,17 +135,17 @@
 @layer utilities {
   .floral-pattern {
     background-image: 
-      radial-gradient(ellipse at 20% 50%, rgba(239, 183, 193, 0.12) 0%, transparent 50%),
-      radial-gradient(ellipse at 80% 50%, rgba(239, 183, 193, 0.12) 0%, transparent 50%),
+      radial-gradient(ellipse at 20% 50%, rgba(214, 188, 232, 0.12) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 50%, rgba(214, 188, 232, 0.12) 0%, transparent 50%),
       radial-gradient(ellipse at 50% 20%, rgba(212, 175, 55, 0.05) 0%, transparent 40%),
       radial-gradient(ellipse at 50% 80%, rgba(212, 175, 55, 0.05) 0%, transparent 40%);
   }
 
   .center-glow {
-    background: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.1) 0%, rgba(246, 211, 218, 0.08) 40%, transparent 65%);
+    background: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.1) 0%, rgba(214, 188, 232, 0.08) 40%, transparent 65%);
   }
 
   .edge-vignette {
-    box-shadow: inset 0 0 120px 40px rgba(201, 124, 138, 0.08);
+    box-shadow: inset 0 0 120px 40px rgba(184, 140, 204, 0.08);
   }
 }

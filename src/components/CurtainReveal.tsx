@@ -17,7 +17,7 @@ const CurtainReveal = ({ onComplete }: Props) => {
         onAnimationComplete={onComplete}
       >
         {/* Main white fabric */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#faf8f5] via-[#f5f0ea] to-[#ede6dd]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#fdfaff] via-[#fafafe] to-[#f4ebf8]" />
         
         {/* Fabric fold lines */}
         <div className="absolute inset-0" style={{
@@ -73,7 +73,7 @@ const CurtainReveal = ({ onComplete }: Props) => {
 
         {/* Top drape swag */}
         <div className="absolute top-0 left-0 right-0 h-20">
-          <div className="absolute inset-0 bg-gradient-to-b from-[#ede6dd] to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#f4ebf8] to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 h-8" style={{
             background: "radial-gradient(ellipse at 50% 100%, rgba(0,0,0,0.05) 0%, transparent 70%)"
           }} />
@@ -81,7 +81,7 @@ const CurtainReveal = ({ onComplete }: Props) => {
 
         {/* Bottom ruffle */}
         <div className="absolute bottom-0 left-0 right-0 h-16">
-          <div className="absolute inset-0 bg-gradient-to-t from-[#e8dfd5] to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#eedbf5] to-transparent" />
           <svg className="absolute bottom-0 w-full h-8 opacity-30" viewBox="0 0 400 20" preserveAspectRatio="none">
             <path d="M0 10 Q25 0 50 10 Q75 20 100 10 Q125 0 150 10 Q175 20 200 10 Q225 0 250 10 Q275 20 300 10 Q325 0 350 10 Q375 20 400 10 L400 20 L0 20Z" fill="#D4AF37" opacity="0.15" />
           </svg>
@@ -105,7 +105,7 @@ const CurtainReveal = ({ onComplete }: Props) => {
         transition={{ duration: 2.8, ease: [0.25, 0.1, 0.25, 1], delay: 0.2 }}
       >
         {/* Main white fabric */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#faf8f5] via-[#f5f0ea] to-[#ede6dd]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#fdfaff] via-[#fafafe] to-[#f4ebf8]" />
         
         {/* Fabric fold lines */}
         <div className="absolute inset-0" style={{
@@ -160,7 +160,7 @@ const CurtainReveal = ({ onComplete }: Props) => {
 
         {/* Top drape swag */}
         <div className="absolute top-0 left-0 right-0 h-20">
-          <div className="absolute inset-0 bg-gradient-to-b from-[#ede6dd] to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#f4ebf8] to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 h-8" style={{
             background: "radial-gradient(ellipse at 50% 100%, rgba(0,0,0,0.05) 0%, transparent 70%)"
           }} />
@@ -168,7 +168,7 @@ const CurtainReveal = ({ onComplete }: Props) => {
 
         {/* Bottom ruffle */}
         <div className="absolute bottom-0 left-0 right-0 h-16">
-          <div className="absolute inset-0 bg-gradient-to-t from-[#e8dfd5] to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#eedbf5] to-transparent" />
           <svg className="absolute bottom-0 w-full h-8 opacity-30" viewBox="0 0 400 20" preserveAspectRatio="none">
             <path d="M0 10 Q25 0 50 10 Q75 20 100 10 Q125 0 150 10 Q175 20 200 10 Q225 0 250 10 Q275 20 300 10 Q325 0 350 10 Q375 20 400 10 L400 20 L0 20Z" fill="#D4AF37" opacity="0.15" />
           </svg>
@@ -190,7 +190,7 @@ const CurtainReveal = ({ onComplete }: Props) => {
         animate={{ opacity: 0 }}
         transition={{ duration: 1.5, delay: 1.5 }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-[#f5f0ea] to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#fafafe] to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent" />
       </motion.div>
     </div>

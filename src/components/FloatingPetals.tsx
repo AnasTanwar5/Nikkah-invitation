@@ -9,11 +9,12 @@ const FloatingPetals = () => {
       duration: `${8 + Math.random() * 6}s`,
       size: 6 + Math.random() * 10,
       opacity: 0.15 + Math.random() * 0.25,
+      color: i % 3 === 0 ? "hsl(43, 73%, 52%)" : "hsl(270, 70%, 85%)",
     }));
   }, []);
 
   return (
-    <div className="fixed inset-0 pointer-events-none overflow-hidden z-10">
+    <div className="fixed inset-0 pointer-events-none overflow-hidden z-50">
       {petals.map((p) => (
         <div
           key={p.id}
@@ -26,7 +27,7 @@ const FloatingPetals = () => {
           }}
         >
           <svg width={p.size} height={p.size} viewBox="0 0 20 20">
-            <ellipse cx="10" cy="10" rx="5" ry="9" fill="hsl(346, 52%, 77%)" transform="rotate(30 10 10)" />
+            <ellipse cx="10" cy="10" rx="5" ry="9" fill={p.color} transform="rotate(30 10 10)" />
           </svg>
         </div>
       ))}

@@ -12,8 +12,8 @@ const EventCard = ({ icon: Icon, title, lines, delay, href }: {
     <motion.div
       className="relative flex flex-col items-center p-6 rounded-2xl border border-gold/20 backdrop-blur-sm cursor-pointer group overflow-hidden"
       style={{
-        background: "linear-gradient(145deg, rgba(255,248,246,0.8) 0%, rgba(246,211,218,0.4) 50%, rgba(212,175,55,0.05) 100%)",
-        boxShadow: "0 4px 24px rgba(201,124,138,0.1), inset 0 1px 0 rgba(212,175,55,0.15)",
+        background: "linear-gradient(145deg, rgba(253,250,255,0.8) 0%, rgba(214,188,232,0.4) 50%, rgba(212,175,55,0.05) 100%)",
+        boxShadow: "0 4px 24px rgba(184,140,204,0.1), inset 0 1px 0 rgba(212,175,55,0.15)",
       }}
       initial={{ opacity: 0, y: 20 }}
       whileHover={{ y: -5, boxShadow: "0 8px 30px rgba(212,175,55,0.15)" }}

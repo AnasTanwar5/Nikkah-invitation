@@ -29,12 +29,17 @@ const BismillahIntro = forwardRef<HTMLDivElement, Props>(({ onComplete }, ref) =
   return (
     <motion.div
       className="fixed inset-0 z-50 flex items-center justify-center overflow-hidden"
-      style={{ background: "radial-gradient(circle at center, #FFF8F6 0%, #FDF1EC 50%, #F6D3DA 100%)" }}
+      style={{ background: "radial-gradient(circle at center, #FDF8FF 0%, #F5ECFA 50%, #E6D0EE 100%)" }}
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
     >
+      {/* Corner Floral Decorations */}
+      <img src="/assets/flower-corner.png" alt="" className="absolute -top-4 -left-4 w-48 md:w-64 lg:w-80 opacity-80 pointer-events-none z-0" />
+      <img src="/assets/flower-corner.png" alt="" className="absolute -top-4 -right-4 w-48 md:w-64 lg:w-80 opacity-80 pointer-events-none z-0 scale-x-[-1]" />
+      <img src="/assets/flower-center.png" alt="" className="absolute bottom-0 md:-bottom-6 left-1/2 -translate-x-1/2 w-48 md:w-72 opacity-80 pointer-events-none z-0" />
+
       {/* Glowing sparkle dots */}
       {sparkles.map((s) => (
         <motion.div

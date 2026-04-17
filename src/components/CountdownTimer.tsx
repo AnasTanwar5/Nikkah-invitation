@@ -46,8 +46,8 @@ const CountdownTimer = () => {
               <div
                 className="w-16 h-16 md:w-20 md:h-20 rounded-xl flex items-center justify-center border border-gold/20"
                 style={{
-                  background: "linear-gradient(145deg, rgba(255,248,246,0.85) 0%, rgba(246,211,218,0.5) 100%)",
-                  boxShadow: "0 4px 20px rgba(201,124,138,0.1), inset 0 1px 0 rgba(212,175,55,0.12)",
+                  background: "linear-gradient(145deg, rgba(253,250,255,0.85) 0%, rgba(214,188,232,0.5) 100%)",
+                  boxShadow: "0 4px 20px rgba(184,140,204,0.1), inset 0 1px 0 rgba(212,175,55,0.12)",
                 }}
               >
                 <span className="font-display text-2xl md:text-3xl gold-glow font-semibold">
